@@ -7,23 +7,28 @@
 	<link rel="stylesheet" href="fast.css">
 	<style>
 		body {
-		   font-size: 16px; /* 设置默认字体大小 */
+		   font-size: 16px;
 	   }
 	   .justified-text {
 		 text-align: justify;
 		 text-justify: inter-word;
 	   }
+	   /* 新增样式：为列表内容添加缩进和点 */
+	   .indented-list {
+		   margin-left: 2em; /* 整体缩进 */
+		   padding-left: 0; /* 移除内边距 */
+		   list-style-type: disc; /* 列表项前显示圆点 */
+	   }
+	   .indented-list p {
+		   display: list-item; /* 将段落显示为列表项，使圆点生效 */
+		   margin-left: 1em; /* 调整点与文本间的距离 */
+	   }
    </style>
 	</head>
 	<body>
 
-		<h1>Piaohong (Allen) Wang</h1>
-		<!-- <div class="topnav">
-			<a href="./index.html">Home</a>
-			<a href="./pub.html">Research</a>
-			<a href="./exp.html">Experience</a>
-			<a href="./LIRI.html">LICRI</a>
-		</div> -->
+		<h1>Piaohong (Allen) Wang 王飄鴻</h1>
+		
 		<div class="navbar">
 			<a class="active" href="./index.html">Home</a>
 			<a class="active" href="./pub.html">Research</a>
@@ -31,35 +36,35 @@
 			<a class="active" href="./life.html">My Life</a>
 			<a class="active" href="./blogs.html">Blogs (In Chinese) </a>
 		</div>
-
+		
+		<br>
+		<h2><a href="https://www.linkedin.com/in/allenpiaohong/?originalSubdomain=hk">Linkedin</a> is more recommended</h2>
 
 
 		<h3>Education Experience: </h3>
+		<!-- 从这里开始，将需要格式化的段落包裹在新的 div 容器中 -->
+		<div class="indented-list">
 			<p>PhD Candidate in CS, City University of Hong Kong (expected to be awarded in 2026)</p>
 			<p>Mphil Student in Electrical & Computer Engineering, Hong Kong University of Science and Technology (transferred out due to conflicting research interests in 2022)</p>
 			<p>Bachelor in HSBC Fintech Elite Class, South China University of Technology (2021)</p>
-			</p>
+		</div>
 
 		<h3>Industry Experience (Project collaboration or Internship)</h3>
+		<div class="indented-list">
 			<p>2024.7 - 2024.12: Research intern in Shenzhen Research Institute of Big Data</p>
 			<p>2024.6 - 2025.6:  Research intern in Personal AI Lab, Oppo AI Center</p>
 			<p>2024.2 - 2024.5:  Research intern in NetEase ThunderFire UX Research Center</p>
 			<p>2020.9 - 2021.4:  Software engineer intern in global risk analysis group of HSBC </p>
-			</p>
+		</div>
 		
-			<h3>Academic Services</h3>
+		<h3>Academic Services</h3>
+		<div class="indented-list">
 			<p>Reviewer: CSCW/CHI/CHI PLAY/UIST/DIS/HICSS/Chinese CHI/ARR/JCIT</p>
 			<p>Conference Committee: Chinese CHI</p>
 			<p>Social Service: HCIX Postgraduate Student Mentor (HCIX is the largest academic summer camp for HCI beginners in China.)</p>
-			</p>
-<!-- 
-			<h3>Mentoring Student</h3>
-			
-			<p></p>
-			<p>Wei Bingbing (Research Assistant in SMILE & Master Student in CityU CS, BS from HNU)</p>
-			<p>Liu Runxuan (Research Assistant in SMILE & Master Student in CityU CS, BS from DMU)</p>	 -->
+		</div>
+
 		</p>
 
 	</body>
 </html>
-
